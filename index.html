@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>JDM Snaps</title>
+
+    <!--Анимированный фон-->>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+        <defs>
+            <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite" />
+                <stop offset="0%" stop-color="#ff0" />
+                <stop offset="100%" stop-color="#ff00" />
+            </radialGradient>
+            <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite" />
+                <stop offset="0%" stop-color="#0ff" />
+                <stop offset="100%" stop-color="#0ff0" />
+            </radialGradient>
+            <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+                <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite" />
+                <stop offset="0%" stop-color="#f0f" />
+                <stop offset="100%" stop-color="#f0f0" />
+            </radialGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+            <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+            <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
+                repeatCount="indefinite" />
+        </rect>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+            <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite" />
+            <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite" />
+            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s"
+                repeatCount="indefinite" />
+        </rect>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+            <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite" />
+            <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite" />
+            <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
+                repeatCount="indefinite" />
+        </rect>
+    </svg>
+    <style>
+        /* Стилизация заголовка */
+        h1 {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Стилизация карточек-кнопок марок автомобилей */
+        .car-card {
+            display: inline-block;
+            width: 250px;
+            height: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px grey;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Стилизация изображений в карточках-кнопках */
+        .car-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Стилизация подписей к изображениям в карточках-кнопках */
+        .car-card h2 {
+            margin-top: 10px;
+            text-align: match-parent;
+            font-size: 2em;
+        }
+
+        /* Стилизация ссылки-кнопки */
+        .car-card a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <!-- Заголовок страницы -->
+    <h1><a href="index.html">JDM Snaps</a></h1>
+
+    <!-- Контейнер для карточек-кнопок -->
+    <div class="container">
+        <!-- Карточка-кнопка для марки Honda -->
+        <div class="car-card">
+            <a href="honda.html">
+                <img src="img\honda.jpg" alt="Honda">
+                <h2>Honda</h2>
+            </a>
+        </div>
+
+        <!-- Карточка-кнопка для марки Toyota -->
+        <div class="car-card">
+            <a href="toyota.html">
+                <img src="img\toyota.jpg" alt="Toyota">
+                <h2>Toyota</h2>
+            </a>
+        </div>
+
+        <!-- Карточка-кнопка для марки Subaru -->
+        <div class="car-card">
+            <a href="subaru.html">
+                <img src="img\subaru.jpg" alt="Subaru">
+                <h2>Subaru</h2>
+            </a>
+        </div>
+
+        <!-- Карточка-кнопка для марки Nissan -->
+        <div class="car-card">
+            <a href="nissan.html">
+                <img src="img\nissan.jpg" alt="Nissan">
+                <h2>Nissan</h2>
+            </a>
+        </div>
+
+        <!-- Карточка-кнопка для марки Mazda -->
+        <div class="car-card">
+            <a href="mazda.html">
+                <img src="img\mazda.jpg" alt="Mazda">
+                <h2>Mazda</h2>
+            </a>
+        </div>
+
+        <!-- Карточка-кнопка для марки Mitsubishi -->
+        <div class="car-card">
+            <a href="mitsubishi.html">
+                <img src="img\mitsubishi.jpg" alt="Mitsubishi">
+                <h2>Mitsubishi</h2>
+            </a>
+        </div>
+    </div>
+
+    <footer class="bottom-footer">
+        <p>Сделал Саламатов Д.Р. КС-31.</p>
+        <p>tg.xXxSTITCHxXx</p>
+    </footer>
+
+</body>
+
+</html>
